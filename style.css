@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1.2rem;
+    
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    max-width: 400px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+/* Output Styling */
+pre {
+    background-color: #282c34;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+#error {
+    color: red;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Active theme styling */
+button.theme-switch {
+    background-color: lightgreen;
+    color: black;
+    margin-bottom: px;
+}
+
+button.theme-switch.active {
+    background-color: lightblue;
+}
+
