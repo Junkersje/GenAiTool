@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hugging Face API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>See generation language differences in this answer generator</h1>
+
+  <!-- Input for the API Key -->
+  <label for="api-key">Enter your Hugging Face Key to use the API</label>
+  <input type="text" id="api-key" placeholder="Your Hugging Face API Key" /><br><br>
+
+
+  <!-- HTML: Switch Button with Theme Name Inside -->
+  <p id="theme-toggle-description">Click here to change between grandparent and teenager</p>
+  <button id="theme-toggle-btn" class="theme-switch">
+    <span id="theme-name">Teenager</span>
+  </button>
+
+  
+  <!-- Input for the prompt -->
+  <textarea id="prompt" placeholder="Enter your prompt here"></textarea><br><br>
+
+  <button id="submit-btn">Submit</button>
+
+  <pre id="response-output"></pre>
+
+  <!-- Link to external JavaScript file -->
+  <script src="hugging-face.js"></script>
+</body>
+
+</html>
