@@ -46,7 +46,7 @@ function callHuggingFaceAPI(apiKey, prompt) {
             return response.json();
         })
         .then((data) => {
-            const respondtext = data.choices[0].message.content; //FORKLAR DETTE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! print data for uddybende forklaring, det var et objekt i den returnerede data som var svaret, og det fisker vi ud her igennem dataens choices da det er et array med et enkelt object
+            const respondtext = data.choices[0].message.content; //det var et objekt i den returnerede data som var svaret, og det fisker vi ud her igennem dataens choices da det er et array med et enkelt object
             console.log("Response object:", respondtext);
             document.getElementById("response-output").textContent = respondtext;
         })
@@ -67,7 +67,7 @@ document.getElementById("submit-btn").addEventListener("click", () => {
     }
 
     if (prompt) {
-        callHuggingFaceAPI(apiKey, `with the most formal boomer way to answer, ${prompt}`);
+        callHuggingFaceAPI(apiKey, `with the most formal way to answer, ${prompt}`);
     } else {
         alert("Please enter a prompt!");
     }
